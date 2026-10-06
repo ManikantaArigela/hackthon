@@ -1,0 +1,15 @@
+falkordb
+fastapi
+uvicorn[standard]
+streamlit
+pytest
+httpx
+python-dotenv
+pydantic
+requests
+
+# ── LLM providers — install the one you're using ─────────────────────────────
+groq                        # Free — recommended
+google-generativeai         # Free tier (Gemini)
+# anthropic                 # Paid (Claude)
+# ollama is local, no pip needed

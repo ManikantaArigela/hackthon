@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  falkordb:
+    image: falkordb/falkordb:latest
+    container_name: relay_falkordb
+    ports:
+      - "6379:6379"
+      - "8001:8001"
+    volumes:
+      - falkordb_data:/data
+    restart: unless-stopped
+
+volumes:
+  falkordb_data:
